@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="org.cordova.social" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>Cordova Social</name><DESCRIPTION>Cordova Social Plugin Example</DESCRIPTION><js-module name="Cordova Social" src="www/Cordova Social.js"><clobbers target="cordova.plugins.Cordova Social" /></js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="Cordova Social"><param name="android-package" value="org.cordova.social.Cordova Social" />
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET"/>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="application">
+              <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+              <provider android:authorities="com.facebook.app.FacebookContentProvider1234"
+          				android:name="com.facebook.FacebookContentProvider"
+          				android:exported="true" />
+        </config-file>
+		<source-file src="src/android/Cordova Social.java" target-dir="src/org/cordova/social/Cordova Social" />
+	</platform>
+</plugin>
