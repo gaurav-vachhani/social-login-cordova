@@ -3,7 +3,7 @@
 	<platform name="android">
 		     <framework src="com.facebook.android:facebook-android-sdk:4.+" />
 		<config-file parent="/*" target="res/xml/config.xml">
-			<feature name="Cordova Social"><param name="android-package" value="org.cordova.social.Cordova Social" />
+			<feature name="Cordova Social"><param name="android-package" value="org.cordova.social.CordovaSocial" />
 			</feature>
 		</config-file>
 		<config-file parent="/*" target="res/values/strings.xml">
@@ -18,6 +18,6 @@
           				android:name="com.facebook.FacebookContentProvider"
           				android:exported="true" />
         </config-file>
-		<source-file src="src/android/Cordova Social.java" target-dir="src/org/cordova/social/Cordova Social" />
+		<source-file src="src/android/CordovaSocial.java" target-dir="src/org/cordova/social/Cordova Social" />
 	</platform>
 </plugin>
