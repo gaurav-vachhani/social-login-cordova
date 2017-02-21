@@ -6,6 +6,9 @@
 			<feature name="Cordova Social"><param name="android-package" value="org.cordova.social.Cordova Social" />
 			</feature>
 		</config-file>
+		<config-file parent="/*" target="res/values/strings.xml">
+			<string name="facebook_app_id"></string>
+		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.INTERNET"/>
         </config-file>
