@@ -8,7 +8,7 @@
     </js-module>
     <platform name="android">
         <framework src="com.facebook.android:facebook-android-sdk:4.+"/>
-        <framework src="com.google.gms:google-services:3.0.0"/>
+        <framework src="com.google.android.gms:play-services-auth:9.8.0"/>
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="CordovaSocial">
                 <param name="android-package" value="org.cordova.social.CordovaSocial"/>
