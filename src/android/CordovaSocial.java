@@ -17,15 +17,15 @@ public class CordovaSocial extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("loginFB")) {
+        if (action.equals("loginFb")) {
             String message = args.getString(0);
-            this.loginFB(message, callbackContext);
+            this.loginFb(message, callbackContext);
             return true;
         }
         return false;
     }
 
-    private void loginFB(String message, CallbackContext callbackContext) {
+    private void loginFb(String message, CallbackContext callbackContext) {
         LoginManager.getInstance().logInWithReadPermissions(cordova.getActivity(), Arrays.asList("email", "public_profile"));
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
