@@ -4,7 +4,7 @@
 		     <framework src="com.facebook.android:facebook-android-sdk:4.+" />
 		<config-file parent="/*" target="res/xml/config.xml">
 			<feature name="android-package">
-				<param name="android-package" value="org.cordova.social.CordovaSocial" />
+				<param name="android-package" value="org.cordova.social" />
 			</feature>
 		</config-file>
 		<config-file parent="/*" target="res/values/strings.xml">
