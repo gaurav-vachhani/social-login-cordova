@@ -19,6 +19,6 @@
           				android:name="com.facebook.FacebookContentProvider"
           				android:exported="true" />
         </config-file>
-		<source-file src="src/android/CordovaSocial.java" target-dir="src/org/cordova/social/CordovaSocial" />
+		<source-file src="src/android/CordovaSocial.java" target-dir="src/org/cordova/social" />
 	</platform>
 </plugin>
